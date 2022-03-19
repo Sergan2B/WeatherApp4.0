@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img1Day"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/sand_clock"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/text1DayDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/barlowmedium"
+        android:text="13h 1m"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="@id/img1Day"
+        app:layout_constraintStart_toStartOf="@id/img1Day"
+        app:layout_constraintTop_toBottomOf="@id/img1Day" />
+
+    <TextView
+        android:id="@+id/text1DayMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:text="13С↑"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/text1DayDate"
+        app:layout_constraintStart_toStartOf="@id/text1DayDate"
+        app:layout_constraintTop_toBottomOf="@id/text1DayDate" />
+
+    <TextView
+        android:id="@+id/text1DayMinTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        android:text="12С↓"
+        android:textColor="@color/gray"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@id/text1DayDate"
+        app:layout_constraintStart_toEndOf="@id/text1DayMinTemp"
+        app:layout_constraintTop_toBottomOf="@id/text1DayDate" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
